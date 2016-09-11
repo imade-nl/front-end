@@ -1,0 +1,25 @@
+
+nav{
+	ul{
+		list-style: none;
+		padding-left: 0;
+		margin-bottom: 0;
+	}
+}
+
+.nav-primary a{
+	display: block;
+	padding: 10px 15px;
+}
+
+@media (min-width: $screen-sm-min) {
+	.nav-primary{
+		display: table;
+		width: 100%;
+		text-align: center;
+
+		li{
+			display: table-cell;
+		}
+	}
+}
