@@ -6,13 +6,14 @@ var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
 var sourcemaps = require('gulp-sourcemaps');
 
-// concat all styles
+// compile all sass
 gulp.task('sass', function () {
   return gulp.src('./src/sass/**/*.scss')
 	.pipe(sass().on('error', sass.logError))
 	.pipe(gulp.dest('./dist/css'));
 });
 
+// watch for changed sass files
 gulp.task('sass:watch', function () {
   gulp.watch('./src/sass/**/*.scss', ['sass']);
 });
@@ -31,7 +32,23 @@ gulp.task('js', function(){
 	.pipe(gulp.dest('./dist/js'));
 });
 
-// move vendor fonts
+// watch for a changed javascript main.js
+gulp.task('js:watch', function () {
+  gulp.watch('./src/js/main.js', ['js']);
+});
+
+// copy html files
+gulp.task('html', function() {
+	return gulp.src('src/*.html')
+	.pipe(gulp.dest('./dist'));
+});
+
+// watch for changed html src files
+gulp.task('html:watch', function () {
+  gulp.watch('./src/*.html', ['html']);
+});
+
+// copy vendor fonts
 gulp.task('fonts', function() {
 	return gulp.src([
 		'src/vendor/slick-carousel/slick/fonts/slick.*'
@@ -39,7 +56,12 @@ gulp.task('fonts', function() {
 	.pipe(gulp.dest('./dist/css/fonts'));
 });
 
+// watch all
+gulp.task('watch', ['sass:watch', 'js:watch', 'html:watch'], function () {
+  console.log('Watch is geactiveerd (sass, js, html).');
+});
+
 // Default task
-gulp.task('default', ['sass', 'js'], function () {
-    gulp.start('build');
+gulp.task('default', ['sass', 'js', 'html', 'fonts'], function () {
+  console.log('Default tasks zijn gestart (sass, js, html, fonts).');
 });
