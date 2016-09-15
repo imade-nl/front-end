@@ -1,12 +1,12 @@
 {
-  "name": "Front-end Boilerplate",
+  "name": "front-end",
   "authors": [
     "Pieter <pieter@imade.nl>"
   ],
-  "description": "",
+  "description": "Front-end Boilerplate",
   "main": "",
   "license": "MIT",
-  "homepage": "",
+  "homepage": "https://github.com/imade-nl/front-end",
   "private": true,
   "ignore": [
     "**/.*",
@@ -18,7 +18,7 @@
   ],
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
-    "jquery": "^1.9.0",
+    "jquery": "^3.1.0",
     "slick-carousel": "^1.6.0"
   }
 }
