@@ -4,12 +4,19 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var imagemin = require('gulp-tinypng');
+var cleanCSS = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
+var autoprefixer = require('gulp-autoprefixer');
 
 // compile all sass
 gulp.task('sass', function () {
   return gulp.src('./src/sass/**/*.scss')
 	.pipe(sass().on('error', sass.logError))
+	// .pipe(sourcemaps.init())
+	.pipe(autoprefixer({ browsers: ['last 3 versions', 'IE9', 'IE10'], cascade: false }))
+	.pipe(cleanCSS())
+	// .pipe(sourcemaps.write())
 	.pipe(gulp.dest('./dist/css'));
 });
 
@@ -46,6 +53,18 @@ gulp.task('html', function() {
 // watch for changed html src files
 gulp.task('html:watch', function () {
   gulp.watch('./src/*.html', ['html']);
+});
+
+// copy html files
+gulp.task('img', function() {
+	return gulp.src('src/img/**/*.*')
+    .pipe(tingpng('gPdn6kO6r8IOXae9sG_IF2wcPVilEYzd'))
+	.pipe(gulp.dest('./dist/img'));
+});
+
+// watch for changed html src files
+gulp.task('img:watch', function () {
+  gulp.watch('./src/img/**/*.*', ['img']);
 });
 
 // copy vendor fonts
