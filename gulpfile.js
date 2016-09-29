@@ -4,7 +4,7 @@ var gulp = require('gulp');
 var sass = require('gulp-sass');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
-var imagemin = require('gulp-tinypng');
+var tinypng = require('gulp-tinypng');
 var cleanCSS = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
@@ -57,14 +57,14 @@ gulp.task('html:watch', function () {
 
 // copy html files
 gulp.task('img', function() {
-	return gulp.src('src/img/**/*.*')
-    // .pipe(tingpng('API_KEY'))
+	return gulp.src('src/img/**/*.{png,gif,jpg,jpeg}')
+    .pipe(tinypng('API_KEY'))
 	.pipe(gulp.dest('./dist/img'));
 });
 
 // watch for changed html src files
 gulp.task('img:watch', function () {
-  gulp.watch('./src/img/**/*.*', ['img']);
+  gulp.watch('./src/img/**/*.{png,gif,jpg,jpeg}', ['img']);
 });
 
 // copy vendor fonts

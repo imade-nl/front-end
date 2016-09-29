@@ -1,12 +1,11 @@
 
 // bootstrap variables
-$body-bg: #fff !default;
-
+$font-size-base: 16px;
+$line-height-base: 1.5;
 $text-color: #333;
+$body-bg: #fff;
 
 $link-color: blue;
-$link-hover-color:      darken($link-color, 15%) !default;
-$link-hover-decoration: underline !default;
+$link-hover-color: darken($link-color, 15%);
+$link-hover-decoration: underline;
 
-$font-size-base: 16px;
-$line-height-base:        1.5 !default;
