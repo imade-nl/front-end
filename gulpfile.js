@@ -58,7 +58,7 @@ gulp.task('html:watch', function () {
 // copy html files
 gulp.task('img', function() {
 	return gulp.src('src/img/**/*.*')
-    .pipe(tingpng('gPdn6kO6r8IOXae9sG_IF2wcPVilEYzd'))
+    // .pipe(tingpng('API_KEY'))
 	.pipe(gulp.dest('./dist/img'));
 });
 
@@ -76,11 +76,11 @@ gulp.task('fonts', function() {
 });
 
 // watch all
-gulp.task('watch', ['sass:watch', 'js:watch', 'html:watch'], function () {
-  console.log('Watch is geactiveerd (sass, js, html).');
+gulp.task('watch', ['sass:watch', 'js:watch', 'img:watch', 'html:watch'], function () {
+  console.log('Watch is geactiveerd (sass, js, img, html).');
 });
 
 // Default task
-gulp.task('default', ['sass', 'js', 'html', 'fonts'], function () {
-  console.log('Default tasks zijn gestart (sass, js, html, fonts).');
+gulp.task('default', ['sass', 'js', 'img', 'html', 'fonts', 'watch'], function () {
+  console.log('Default tasks zijn gestart (sass, js, img, html, fonts en watch).');
 });
