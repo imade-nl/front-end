@@ -1,0 +1,76 @@
+
+[class^="i-"],
+[class*=" i-"] {
+    display: inline-block;
+    line-height: 0.9;
+    vertical-align: middle;
+}
+
+[class^="i-"]:before,
+[class*=" i-"]:before {
+	/*vertical-align: bottom;
+	display: inline-block;*/
+}
+
+.icon-nav{
+	display: inline-block;
+	position: relative;
+	height: 2px;
+	width: 22px;
+	background-color: #fff;
+	margin: 4px 0;
+	border-radius: 1px;
+    -webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+}
+
+.icon-nav:before,
+.icon-nav:after{
+	content: "";
+	display: block;
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 2px;
+	background-color: #FFF;
+	border-radius: 1px;
+    -webkit-transition: 0.1s ease-in-out;
+    -moz-transition: 0.1s ease-in-out;
+    -o-transition: 0.1s ease-in-out;
+    transition: 0.1s ease-in-out;
+}
+
+.icon-nav:before{ top: -6px; }
+.icon-nav:after{ top: 6px; }
+
+.open .icon-nav{ background-color: transparent; }
+.open .icon-nav:before{ transform: rotate(45deg); top: 0; }
+.open .icon-nav:after{ transform: rotate(-45deg); top: 0; }
+
+
+.icon-close{
+	display: block;
+	font-size: 32px;
+}
+.icon-close:before{
+	content: "×";
+}
+
+.icon{
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.icon-arrow-down-white{
+	width: 21px;
+	height: 14px;
+	background: url("../img/arrow-down-white.png") no-repeat 0 0;
+}
+
+.icon-arrow-up-white{
+	width: 21px;
+	height: 14px;
+	background: url("../img/arrow-up-white.png") no-repeat 0 0;
+}

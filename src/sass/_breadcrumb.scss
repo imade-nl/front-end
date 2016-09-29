@@ -1,0 +1,25 @@
+
+.breadcrumb{
+	font-size: 11px;
+	margin-top: -30px;
+	margin-bottom: 10px;
+}
+
+.breadcrumb > li{
+	padding-left: 0;
+}
+
+.breadcrumb > li:before{
+	content: "›";
+	display: inline-block;
+	color: #999;
+	padding-right: 8px;
+	font-size: 14px;
+}
+
+.breadcrumb > li:first-child:before{
+	display: none;
+}
+
+.breadcrumb a{ color: #999; }
+

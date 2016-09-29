@@ -1,0 +1,12 @@
+
+.form-sm{ max-width: 320px; }
+
+.form-control:focus {
+    /*border-color: #711444;*/
+    /*box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(113, 20, 68, 0.6);*/
+}
+
+.form-error{
+	/*border-color: #B94A48;*/
+	box-shadow: 0 0 3px red;
+}

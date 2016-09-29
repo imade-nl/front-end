@@ -1,0 +1,27 @@
+
+.article-list{
+	overflow: hidden;
+}
+
+.article-list .row{
+	padding-top: 30px;
+	padding-bottom: 30px;
+	border-top: 1px solid #E7E7E7;
+}
+
+.article-list p{
+	margin-bottom: 10px;
+}
+
+.article-date{
+	margin-top: -8px;
+}
+
+h1 + .article-date{
+	margin-top: -20px;
+}
+
+@media screen and (min-width: 768px) {
+	.article-title,
+	.article-body{ float: right !important; }
+}

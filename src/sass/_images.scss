@@ -1,0 +1,59 @@
+
+img.pull-left{ margin: 4px 20px 10px 0; }
+img.pull-right{ margin: 4px 0 10px 20px; }
+
+@media screen and (max-width: 767px) {
+    img.pull-left,
+    img.pull-right{
+        margin-top: 0;
+        margin-left: 0;
+        margin-right: 0;
+        display: block;
+        float: none !important;
+    }
+}
+
+
+/* ==========================================================================
+	ZOOM
+   ========================================================================== */
+
+@media screen and (min-width: 768px) {
+	.img-zoom{
+		overflow: hidden;
+		position: relative;
+	}
+
+	.img-zoom::after{
+		content: "";
+		position: absolute;
+		z-index: 1;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		background-color: rgba(255,255,255,0);
+		-webkit-transition: background-color 0.35s;
+		-moz-transition: background-color 0.35s;
+		-ms-transition: background-color 0.35s;
+		-o-transition: background-color 0.35s;
+		transition: background-color 0.35s;
+	}
+
+	.img-zoom img{
+		min-width: 100%;
+		-webkit-transform: scale(1.0,1.0);
+		transform: scale(1.0,1.0);
+		-webkit-transition: -webkit-transform 0.35s;
+		-moz-transition: transform 0.35s;
+		-ms-transition: transform 0.35s;
+		-o-transition: transform 0.35s;
+		transition: transform 0.35s;
+	}
+
+	.img-zoom:hover::after,
+	.mouseover .img-zoom::after{ background-color: rgba(255,255,255,0.5); }
+
+	.img-zoom:hover img,
+	.mouseover .img-zoom img{ transform:scale(1.1,1.1); }
+}
