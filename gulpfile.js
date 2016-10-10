@@ -59,7 +59,7 @@ gulp.task('html:watch', function () {
 // copy html files
 gulp.task('img', function() {
 	return gulp.src('src/img/**/*.{png,gif,jpg,jpeg}')
-    .pipe(tinypng('API_KEY'))
+    // .pipe(tinypng('API_KEY'))
 	.pipe(gulp.dest('./dist/img'));
 });
 
