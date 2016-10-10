@@ -16,6 +16,7 @@ gulp.task('sass', function () {
 	// .pipe(sourcemaps.init())
 	.pipe(autoprefixer({ browsers: ['last 3 versions', 'IE9', 'IE10'], cascade: false }))
 	.pipe(cleanCSS())
+	.pipe(concat('app.min.css'))
 	// .pipe(sourcemaps.write())
 	.pipe(gulp.dest('./dist/css'));
 });
@@ -33,7 +34,7 @@ gulp.task('js', function(){
 		'src/js/main.js'
 	])
 	// .pipe(sourcemaps.init())
-	.pipe(concat('main.js'))
+	.pipe(concat('app.min.js'))
 	// .pipe(sourcemaps.write())
 	.pipe(uglify())
 	.pipe(gulp.dest('./dist/js'));
@@ -81,6 +82,6 @@ gulp.task('watch', ['sass:watch', 'js:watch', 'img:watch', 'html:watch'], functi
 });
 
 // Default task
-gulp.task('default', ['sass', 'js', 'img', 'html', 'fonts', 'watch'], function () {
-  console.log('Default tasks zijn gestart (sass, js, img, html, fonts en watch).');
+gulp.task('default', ['sass', 'js', 'img', 'html', 'fonts'], function () {
+  console.log('Run default tasks (sass, js, img, html, fonts).');
 });
