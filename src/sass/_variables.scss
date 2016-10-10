@@ -1,11 +1,23 @@
 
 // bootstrap variables
+$body-bg: #212121;
+$text-color: #ffffff;
 $font-size-base: 16px;
-$line-height-base: 1.5;
-$text-color: #333;
-$body-bg: #fff;
+$line-height-base: 1.625;
+$font-family-base: 'Signika', sans-serif;
 
-$link-color: blue;
+$link-color: #337ab7;
 $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: underline;
 
+$border-radius-base: 0;
+
+// $pagination-bg: #37363a;
+// $pagination-border: #59575d;
+// $pagination-hover-border: #59575d;
+// $pagination-disabled-border: #59575d;
+// $pagination-active-border: #59575d;
+// $pagination-disabled-bg: #59575d;
+// $pagination-hover-bg: #2a2a2d;
+// $pagination-active-bg: #2a2a2d;
+// $pagination-disabled-bg: #37363a;

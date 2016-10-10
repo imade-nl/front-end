@@ -1,4 +1,10 @@
 
+@import 'https://fonts.googleapis.com/css?family=Signika:300,400,600';
+
+body{
+
+}
+
 img{
 	max-width: 100%;
     height: auto;
@@ -6,12 +12,15 @@ img{
 
 p, ul, ol{
 	margin-top: 0;
-	margin-bottom: 1em;
+	margin-bottom: $line-height-computed;
 }
 
-nav ul{
-    margin-bottom:0;
-    padding-left: 0;
-    list-style: none;
+a, button{
+	cursor: pointer;
+	text-decoration: none !important;
+	transition: color 0.1s ease-out, background-color 0.1s ease-out;
 }
 
+.text-nowrap{
+	white-space: nowrap;
+}

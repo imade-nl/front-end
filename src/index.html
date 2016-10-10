@@ -1,58 +1,71 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap 101 Template</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Bootstrap 101 Template</title>
 
-    <link href="css/main.css" rel="stylesheet">
+	<link href="css/app.min.css" rel="stylesheet">
 
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-  </head>
-  <body>
+	<!--[if lt IE 9]>
+	  <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+	  <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+	<![endif]-->
+</head>
+<body>
 
-	<header>
-        <div class="container">
-    		<div class="logo"><img src="http://placehold.it/350x150&text=Logo" alt=""></div>
+	<div class="container">
+		<div class="page">
 
-    		<nav class="nav">
-    			<ul class="nav-primary">
-    				<li><a href="">Home</a></li>
-    				<li><a href="">Over Ons</a></li>
-    				<li><a href="">Diensten</a></li>
-    				<li><a href="">Nieuws</a></li>
-    				<li><a href="">Contat</a></li>
-    			</ul>
-    		</nav>
-        </div>
-	</header>
+			<header class="page-header">
+				<nav class="header-top">
+					<ul class="list-inline list-inline--divider">
+						<li><a href="tel:0174123456">0174 - 123456</a></li>
+						<li class="hidden-xs"><a href="#">Nieuws</a></li>
+						<li class="hidden-xs"><a href="#">Contact</a></li>
+					</ul>
+				</nav>
 
-	<main role="main" id="content">
-        <div class="container">
-    		<div class="slider">
-    			<div><img src="http://placehold.it/800x500&text=Slide 1" alt=""></div>
-    			<div><img src="http://placehold.it/800x500&text=Slide 2" alt=""></div>
-    			<div><img src="http://placehold.it/800x500&text=Slide 3" alt=""></div>
-    			<div><img src="http://placehold.it/800x500&text=Slide 4" alt=""></div>
-    			<div><img src="http://placehold.it/800x500&text=Slide 5" alt=""></div>
-    		</div>
+				<div class="header-logo"><img src="http://placehold.it/350x150&text=Logo" alt=""></div>
 
-    		<h1>Hier de titel van de pagina</h1>
-    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur vitae ducimus consectetur deleniti doloremque aspernatur totam quibusdam nemo laudantium eum, sapiente sit maxime ipsum optio, quae dolore possimus modi!</p>
-    		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit pariatur perspiciatis quod ipsum nisi beatae animi fugiat facilis <a href="#">blanditiis</a> tempore nesciunt ut id, sed quos, tempora magni deserunt dolorem. Id.</p>
-        </div>
-	</main>
+				<nav class="header-nav">
+					<ul class="nav-primary" id="nav">
+						<li><a href="">Home</a></li>
+						<li><a href="">Over Ons</a></li>
+						<li><a href="">Diensten</a></li>
+						<li><a href="">Nieuws</a></li>
+						<li><a href="">Contat</a></li>
+					</ul>
+				</nav>
 
-    <footer>
-        <div class="container">
+				<a class="nav-toggle js-toggle" data-toggle="#nav"><i class="icon-nav"></i> menu</a>
+			</header>
 
-        </div>
-    </footer>
+			<div class="page-slider">
+				<div><img src="http://placehold.it/1140x360&text=Slide 1" alt=""></div>
+				<div><img src="http://placehold.it/1140x360&text=Slide 2" alt=""></div>
+				<div><img src="http://placehold.it/1140x360&text=Slide 3" alt=""></div>
+				<div><img src="http://placehold.it/1140x360&text=Slide 4" alt=""></div>
+				<div><img src="http://placehold.it/1140x360&text=Slide 5" alt=""></div>
+			</div>
 
-    <script src="js/main.js" async></script>
-  </body>
+			<main role="main" id="content" class="page-body">
+				<h1>Hier de titel van de pagina</h1>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus consequuntur vitae ducimus consectetur deleniti doloremque aspernatur totam quibusdam nemo laudantium eum, sapiente sit maxime ipsum optio, quae dolore possimus modi!</p>
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit pariatur perspiciatis quod ipsum nisi beatae animi fugiat facilis <a href="#">blanditiis</a> tempore nesciunt ut id, sed quos, tempora magni deserunt dolorem. Id.</p>
+			</main>
+
+		</div>
+	</div>
+
+	<footer class="page-footer">
+		<div class="container">
+
+		</div>
+	</footer>
+
+	<script src="js/app.min.js" async></script>
+
+</body>
 </html>

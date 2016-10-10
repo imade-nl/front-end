@@ -1,0 +1,53 @@
+
+.btn{
+	text-decoration: none;
+}
+
+
+/* ==========================================================================
+	Scrolltop button
+   ========================================================================== */
+
+.btn-scrolltop{
+	opacity: 0;
+	display: inline-block;
+	position: fixed;
+	z-index: 80;
+	right: 0;
+	bottom: 30px;
+	padding: 10px;
+	border-radius: 4px 0 0 4px;
+	background-color: rgba(0,0,0,0.5);
+	transition: opacity 0.5s ease-in;
+
+	&:hover, &:focus{
+		background-color: rgba(0,0,0,0.65);
+	}
+}
+
+.btn-scrolltop--show{
+	opacity: 1;
+}
+
+
+/* ==========================================================================
+	Socail (circle) button
+   ========================================================================== */
+
+.btn-social{
+	display: inline-block;
+	color: #212121;
+	width: 42px;
+	height: 42px;
+	text-align: center;
+	line-height: 42px;
+	font-size: 21px;
+	border-radius: 100px;
+	background-color: #989898;
+
+	&:hover, &:focus{
+		color: #212121;
+		background-color: darken(#989898, 10%);
+		text-decoration: none;
+	}
+}
