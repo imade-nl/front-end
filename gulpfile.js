@@ -16,7 +16,7 @@ gulp.task('sass', function () {
 	// .pipe(sourcemaps.init())
 	.pipe(autoprefixer({ browsers: ['last 3 versions', 'IE9', 'IE10'], cascade: false }))
 	.pipe(cleanCSS())
-	.pipe(concat('app.min.css'))
+	.pipe(concat('all.min.css'))
 	// .pipe(sourcemaps.write())
 	.pipe(gulp.dest('./dist/css'));
 });
@@ -34,7 +34,7 @@ gulp.task('js', function(){
 		'src/js/main.js'
 	])
 	// .pipe(sourcemaps.init())
-	.pipe(concat('app.min.js'))
+	.pipe(concat('all.min.js'))
 	// .pipe(sourcemaps.write())
 	.pipe(uglify())
 	.pipe(gulp.dest('./dist/js'));

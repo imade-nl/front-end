@@ -5,9 +5,7 @@ Front-end Boilerplate
 
 Clone into local project
 ```
-git clone https://github.com/imade-nl/front-end.git
-or
-git clone https://github.com/imade-nl/front-end.git project-dir
+git clone https://github.com/imade-nl/front-end.git front-end
 ```
 
 Cd into front-end dir and install npm dependancies
