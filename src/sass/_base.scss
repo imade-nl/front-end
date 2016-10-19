@@ -14,7 +14,8 @@ p, ul, ol{
 	margin-bottom: $line-height-computed;
 }
 
-p + ul{
+p + ul,
+p + ol{
 	margin-top: -20px;
 }
 
@@ -29,7 +30,6 @@ h1{
 
 h1, h2, h3,
 .h1, .h2, .h3{
-	text-transform: uppercase;
 }
 
 h1, .h1,
