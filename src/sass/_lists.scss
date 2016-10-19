@@ -1,0 +1,63 @@
+
+/* ==========================================================================
+   	LIST INLINE
+   ========================================================================== */
+
+.list-inline{
+	margin-left: -10px;
+	margin-right: -10px;
+
+	> li{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+}
+
+.list-inline--divider{
+	> li{
+		position: relative;
+
+		&:before{
+			content: "";
+			position: absolute;
+			left: -1px;
+			width: 1px;
+			top: 50%;
+			height: 16px;
+			margin-top: -8px;
+			background-color: #333;
+		}
+	}
+
+	> li:first-child:before{
+		display: none;
+	}
+}
+
+
+/* ==========================================================================
+   	LIST ANGLE
+   ========================================================================== */
+
+.list-angle{
+	list-style: none;
+	padding-left: 0;
+
+	> li{
+		padding-left: 15px;
+		position: relative;
+
+		&:before{
+			color: inherit;
+			content: "\67";
+			font-family: "icons" !important;
+			font-style: normal !important;
+			font-weight: normal !important;
+			line-height: 1;
+			position: absolute;
+			left: 0px;
+			top: 4px;
+		}
+	}
+}
+

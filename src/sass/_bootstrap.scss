@@ -15,12 +15,12 @@
 
 // Core CSS
 @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/scaffolding";
-// @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/type";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/type";
 // @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/code";
 @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/grid";
 // @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/tables";
-// @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/forms";
-// @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/forms";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/buttons";
 
 // Components
 // @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/component-animations";
@@ -36,7 +36,7 @@
 // @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/badges";
 // @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/jumbotron";
 // @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/thumbnails";
-// @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/alerts";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/alerts";
 // @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/progress-bars";
 // @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/media";
 // @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/list-group";
@@ -52,5 +52,5 @@
 // @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/carousel";
 
 // Utility classes
-// @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
-// @import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/utilities";
+@import "../vendor/bootstrap-sass/assets/stylesheets/bootstrap/responsive-utilities";

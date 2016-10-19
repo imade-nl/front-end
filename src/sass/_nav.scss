@@ -19,11 +19,49 @@ nav{
 	border-bottom: 1px solid rgba(255,255,255,0.1);
 
 	a {
-		font-size: 36px;
 		display: block;
+		position: relative;
 		padding: 10px 15px;
-		color: #FFF;
+		color: #333;
+		font-size: 18px;
+		text-decoration: none;
 		border-top: 1px solid rgba(255,255,255,0.1);
+
+		&.active{
+			color: #ff2900;
+		}
+
+		i{
+			position: absolute;
+			display: block;
+			right: 0;
+			top: 0;
+			font-size: 18px;
+			padding: 10px 15px;
+
+			&:before{
+				display: inline-block;
+				transition: transform 0.1s ease-in;
+			}
+		}
+
+		&.open > i:before{
+			transform: rotate(-180deg);
+		}
+	}
+
+	ul{
+		display: none;
+		background-color: rgba(0,0,0,0.05);
+
+		a{
+			font-size: 16px;
+			padding-left: 30px;
+		}
+
+		ul a{
+			padding-left: 45px;
+		}
 	}
 }
 
@@ -38,6 +76,14 @@ nav{
 
 		a {
 			border-top: none;
+		}
+
+		i{
+			display: none;
+		}
+
+		ul{
+			display: none !important;
 		}
 	}
 }

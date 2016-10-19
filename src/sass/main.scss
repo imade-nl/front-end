@@ -1,6 +1,7 @@
 
 // Overwrite bootstrap variables and pull-in some components
 @import "variables";
+@import "grid";
 @import "bootstrap";
 
 // Project styles
@@ -9,10 +10,11 @@
 @import "breadcrumb";
 @import "buttons";
 @import "forms";
-@import "grid";
 @import "icons";
 @import "images";
 @import "layout";
+@import "lists";
 @import "nav";
-@import "slick";
+// @import "magnific";
+// @import "slick";
 @import "utilities";

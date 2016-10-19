@@ -2,7 +2,6 @@
 @import 'https://fonts.googleapis.com/css?family=Signika:300,400,600';
 
 body{
-
 }
 
 img{
@@ -15,10 +14,28 @@ p, ul, ol{
 	margin-bottom: $line-height-computed;
 }
 
+p + ul{
+	margin-top: -20px;
+}
+
 a, button{
 	cursor: pointer;
-	text-decoration: none !important;
 	transition: color 0.1s ease-out, background-color 0.1s ease-out;
+}
+
+h1{
+	margin-bottom: 1em;
+}
+
+h1, h2, h3,
+.h1, .h2, .h3{
+	text-transform: uppercase;
+}
+
+h1, .h1,
+h2:first-child, .h2:first-child,
+h3:first-child, .h3:first-child{
+	margin-top: 0;
 }
 
 .text-nowrap{

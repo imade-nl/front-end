@@ -10,7 +10,25 @@ $link-color: #337ab7;
 $link-hover-color: darken($link-color, 15%);
 $link-hover-decoration: underline;
 
+$font-size-h1: 24px;
+$font-size-h2: 18px;
+$font-size-h3: 16px;
+$font-size-h4: 16px;
+$font-size-h5: 16px;
+$font-size-h6: 16px;
+
+$headings-font-family: inherit;
+$headings-font-weight: 400;
+$headings-line-height: 1.1;
+$headings-color: inherit;
+
 $border-radius-base: 0;
+
+$btn-font-weight:                600;
+$btn-border-radius-base:         $border-radius-base;
+$btn-border-radius-large:        0;
+$btn-border-radius-small:        0;
+
 
 // $pagination-bg: #37363a;
 // $pagination-border: #59575d;
