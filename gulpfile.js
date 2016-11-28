@@ -30,7 +30,11 @@ gulp.task('sass:watch', function () {
 gulp.task('js', function(){
 	return gulp.src([
 		'src/vendor/jquery/dist/jquery.min.js',
-		'src/vendor/slick-carousel/slick/slick.min.js',
+		'src/vendor/clickblock/jquery.clickblock.js',
+		// 'src/vendor/slick-carousel/slick/slick.min.js',
+		// 'src/vendor/owl.carousel/dist/owl.carousel.min.js',
+		// 'src/vendor/matchheight/dist/jquery.matchHeight.js',
+		'src/vendor/highlight/jquery.highlight.js',
 		'src/js/main.js'
 	])
 	// .pipe(sourcemaps.init())
@@ -71,7 +75,8 @@ gulp.task('img:watch', function () {
 // copy vendor fonts
 gulp.task('fonts', function() {
 	return gulp.src([
-		'src/vendor/slick-carousel/slick/fonts/slick.*'
+		// 'src/vendor/slick-carousel/slick/fonts/*.{eot,svg,ttf,woff}'
+		'src/vendor/fontastic/fonts/*.{eot,svg,ttf,woff}'
 	])
 	.pipe(gulp.dest('./dist/css/fonts'));
 });

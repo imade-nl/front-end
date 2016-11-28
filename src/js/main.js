@@ -46,22 +46,23 @@ $(window).scroll(function() {
 });
 
 
-/*
-
 $(".js-clickblock").clickblock();
 
-$('input, textarea').placeholder();
 
 if( $('#search_field').length ){
    $("#search_result").highlight( $('#search_field').val() );
 }
 
 
+/*
+
+$('input, textarea').placeholder();
+
+
 $('.js-popup').magnificPopup({
 	type:'image',
 	gallery:{enabled:true}
 });
-
 
 
 $(".slider").slick({
