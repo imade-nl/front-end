@@ -20,6 +20,8 @@
     "bootstrap-sass": "^3.3.7",
     "jquery": "^3.1.0",
     "slick-carousel": "^1.6.0",
-    "magnific-popup": "^1.1.0"
+    "magnific-popup": "^1.1.0",
+    "owl.carousel": "^2.2.0",
+    "matchheight": "^0.7.0"
   }
 }

@@ -14,7 +14,7 @@ gulp.task('sass', function () {
   return gulp.src('./src/sass/**/*.scss')
 	.pipe(sass().on('error', sass.logError))
 	// .pipe(sourcemaps.init())
-	.pipe(autoprefixer({ browsers: ['last 3 versions', 'IE9', 'IE10'], cascade: false }))
+	.pipe(autoprefixer({ browsers: ['last 3 versions', 'IE 9', 'IE 10'], cascade: false }))
 	.pipe(cleanCSS())
 	.pipe(concat('all.min.css'))
 	// .pipe(sourcemaps.write())

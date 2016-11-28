@@ -1,0 +1,16 @@
+
+.hit{
+	padding: 15px 0;
+}
+
+.hit + .hit{
+	border-top: 1px solid #ddd;
+}
+
+.hit-title{
+	margin-bottom: 0;
+}
+
+.highlight{
+	background-color: #faf2d8;
+}
