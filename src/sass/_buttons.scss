@@ -14,13 +14,17 @@
 	position: fixed;
 	z-index: 80;
 	right: 0;
-	bottom: 30px;
-	padding: 10px;
+	bottom: 40px;
+	padding: 8px;
 	border-radius: 4px 0 0 4px;
 	background-color: rgba(0,0,0,0.5);
 	transition: opacity 0.5s ease-in;
+	color: #FFF;
+	font-size: 24px;
+	line-height: 1.1em;
 
 	&:hover, &:focus{
+		color: #FFF;
 		background-color: rgba(0,0,0,0.65);
 	}
 }
