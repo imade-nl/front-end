@@ -62,14 +62,19 @@ gulp.task('html:watch', function () {
 
 // copy html files
 gulp.task('img', function() {
-	return gulp.src('src/img/**/*.{png,gif,jpg,jpeg}')
-    // .pipe(tinypng('API_KEY'))
-	.pipe(gulp.dest('./dist/img'));
+  var img_tiny = gulp.src('src/img/**/*.{png,jpg,jpeg}')
+      // .pipe(tinypng('API_KEY'))
+      .pipe(gulp.dest('./dist/img'));
+	
+  var img_other = gulp.src('src/img/**/*.{gif,svg}')
+      .pipe(gulp.dest('./dist/img'));
+
+  return merge(img_tiny, img_other);
 });
 
 // watch for changed html src files
 gulp.task('img:watch', function () {
-  gulp.watch('./src/img/**/*.{png,gif,jpg,jpeg}', ['img']);
+  gulp.watch('./src/img/**/*.{png,jpg,jpeg}', ['img']);
 });
 
 // copy vendor fonts
