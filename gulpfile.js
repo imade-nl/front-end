@@ -74,7 +74,7 @@ gulp.task('img', function() {
 
 // watch for changed html src files
 gulp.task('img:watch', function () {
-  gulp.watch('./src/img/**/*.{png,jpg,jpeg}', ['img']);
+  gulp.watch('./src/img/**/*.{png,jpg,jpeg,gif,svg}', ['img']);
 });
 
 // copy vendor fonts
