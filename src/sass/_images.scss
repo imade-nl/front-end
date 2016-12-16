@@ -22,6 +22,7 @@ img.pull-right{ margin: 4px 0 10px 20px; }
 	.img-zoom{
 		overflow: hidden;
 		position: relative;
+		display: block;
 	}
 
 	.img-zoom::after{
@@ -32,7 +33,7 @@ img.pull-right{ margin: 4px 0 10px 20px; }
 		right: 0;
 		top: 0;
 		bottom: 0;
-		background-color: rgba(255,255,255,0);
+		background-color: rgba(0,0,0,0);
 		-webkit-transition: background-color 0.35s;
 		-moz-transition: background-color 0.35s;
 		-ms-transition: background-color 0.35s;
@@ -52,7 +53,7 @@ img.pull-right{ margin: 4px 0 10px 20px; }
 	}
 
 	.img-zoom:hover::after,
-	.mouseover .img-zoom::after{ background-color: rgba(255,255,255,0.5); }
+	.mouseover .img-zoom::after{ background-color: rgba(0,0,0,0.2); }
 
 	.img-zoom:hover img,
 	.mouseover .img-zoom img{ transform:scale(1.1,1.1); }
