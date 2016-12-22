@@ -1,6 +1,6 @@
 
 
-$('.nav').on('click', 'a', function(e){
+$('#nav').on('click', 'a', function(e){
 	var a = $(this);
 	var open = $(e.toElement).hasClass('open'); // click on icon to slideUp
 
@@ -65,7 +65,7 @@ $('.js-popup').magnificPopup({
 });
 
 
-$(".slider").slick({
+$("#js-slider").slick({
 
   infinite: false,
   dots: true,
@@ -84,6 +84,18 @@ $(".slider").slick({
 		dots: true
 	  }
 	}]
+});
+
+
+$('#js-slider').owlCarousel({
+    margin: 5,
+    loop: true,
+	nav: false,
+	dots: true,
+    items: 1,
+    autoWidth: false,
+    autoplay: false,
+    autoplayTimeout: 4000
 });
 
 */

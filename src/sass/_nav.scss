@@ -9,7 +9,7 @@ nav{
 
 
 /* ==========================================================================
-	Scrolltop button
+	NAV PRIMARY
    ========================================================================== */
 
 .nav-primary{
@@ -86,6 +86,73 @@ nav{
 			display: none !important;
 		}
 	}
+}
+
+/* ==========================================================================
+   	NAV-SUB
+   ========================================================================== */
+
+.nav-sub{
+	background-color: $nav-sub-bg;
+}
+
+.nav-sub a {
+    display: block;
+    text-decoration: none;
+    position: relative
+}
+
+.nav-sub > li >a {
+    padding: $nav-sub-padding;
+    color: $nav-sub-color;
+    font-weight: $nav-sub-font-weight;
+    font-size: $nav-sub-font-size;
+    text-decoration: none;
+    border-top: 1px solid #ccc
+}
+
+// .nav-sub > li > a >.i-angle-down {
+//     float: right;
+//     position: relative;
+//     top: 4px;
+//     margin-right: 0
+// }
+
+.nav-sub > li > a.active, .nav-sub >li > a:focus, .nav-sub > li > a:hover {
+    background-color: rgba(0,0,0,.05)
+}
+
+.nav-sub > li:first-child >a {
+    border-top: none
+}
+
+.nav-sub > li ul {
+    display: none;
+    border-top: 1px solid #ccc;
+    padding: 5px 0 5px 12px;
+    background-color: #fff
+}
+
+.nav-sub > li ul a {
+    padding-left: 18px;
+    margin: 10px 0;
+    line-height: 20px
+}
+
+.nav-sub > li ul a:before {
+    position: absolute;
+    left: 0;
+    top: 0;
+    content: "\g";
+    font-family: icons!important;
+}
+
+.nav-sub > li ul a.active {
+    color: #000
+}
+
+.nav-sub > li.open ul {
+    display: block
 }
 
 

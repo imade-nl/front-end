@@ -1,0 +1,19 @@
+.link{
+	font-size: 18px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	font-family: inherit;
+
+	> i{
+		margin-right: 10px;
+	}
+}
+
+.link-primary{
+	text-transform: uppercase;
+	font-weight: bold;
+	
+	&:hover{
+		text-decoration: none;
+	}
+}

@@ -1,0 +1,83 @@
+/* ==========================================================================
+	EFFECTS FOR ICON CARRIERS
+   ========================================================================== */
+
+.effect--push-right > i {
+    transition: transform .1s ease-out
+}
+
+.effect--push-right:active > i, .effect--push-right:hover > i {
+    -ms-transform: translateX(3px);
+    transform: translateX(3px)
+}
+
+
+/* ==========================================================================
+	EFFECTS :AFTER SLICE 
+   ========================================================================== */
+
+.effect-slice{
+	position: relative;
+	text-align: center;
+    overflow: hidden;
+    text-shadow: 0 0 1px rgba(0, 0, 0, 0.2), 0 1px 0 rgba(0, 0, 0, 0.2);
+    // -webkit-transition: all 1s ease;
+    // -moz-transition: all 1s ease;
+    // -o-transition: all 1s ease;
+    // transition: all 1s ease;
+}
+
+.effect-slice:after {
+	content: "";
+    position: absolute;
+    height: 0%;
+    left: 50%;
+    top: 50%;
+    width: 150%;
+    z-index: 1;
+    -webkit-transition: all 0.75s ease 0s;
+    -moz-transition: all 0.75s ease 0s;
+    -o-transition: all 0.75s ease 0s;
+    transition: all 0.75s ease 0s;
+	border: 3px solid #AEA8D3;
+	opacity: 0;
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-25deg);
+}
+
+.effect-slice:hover:after {
+    height: 400% !important;
+    opacity: 1;
+    color: #c62727;
+}
+
+
+/* ==========================================================================
+	EFFECTS NAV
+   ========================================================================== */
+
+// .effect-after-fill{
+
+// 	a{
+// 		&:after{
+// 			content: "";
+// 			-webkit-transition: all 0.2s ease-out;
+// 			-moz-transition: all 0.2s ease-out;
+// 			-ms-transition: all 0.2s ease-out;
+// 			-o-transition: all 0.2s ease-out;
+// 			transition: all 0.2s ease-out;
+
+// 			-webkit-transform: scaleX(0);
+// 			-ms-transform: scaleX(0);
+// 			transform: scaleX(0);
+// 		}
+
+// 		&:hover:after, &.active:after{
+// 			-webkit-transform: scaleX(1);
+// 			-ms-transform: scaleX(1);
+// 			transform: scaleX(1);
+// 		}
+// 	}
+// }

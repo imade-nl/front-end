@@ -37,6 +37,75 @@
 .mr-25{ margin-right: 25px !important; }
 .mr-30{ margin-right: 30px !important; }
 
+/* ==========================================================================
+    PULLS
+   ========================================================================== */
+
+// @media(min-width: $screen-xs){
+//     .pull-xs-left{
+//         float: left;
+//     }
+
+//     .pull-xs-right{
+//         float: right;
+//     }
+// }
+
+// @media(min-width: $screen-sm){
+//     .pull-sm-left{
+//         float: left;
+//     }
+
+//     .pull-sm-right{
+//         float: right;
+//     }
+// }
+
+// @media(min-width: $screen-md){
+//     .pull-md-left{
+//         float: left;
+//     }
+
+//     .pull-md-right{
+//         float: right;
+//     }
+// }
+
+// @media(min-width: $screen-lg){
+//     .pull-lg-left{
+//         float: left;
+//     }
+
+//     .pull-lg-right{
+//         float: right;
+//     }
+// }
+
+
+/* ==========================================================================
+    DISPLAY
+   ========================================================================== */
+
+.d-inline-block{
+    display: inline-block;
+}
+
+.d-block{
+    display: block;
+}
+
+.d-inline{
+    display: inline;
+}
+
+/* ==========================================================================
+    OVERFLOW
+   ========================================================================== */
+
+.o-hidden{
+    overflow: hidden;
+}
+
 
 /* ==========================================================================
    	CLICKBLOCK

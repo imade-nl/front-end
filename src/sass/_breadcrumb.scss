@@ -1,18 +1,27 @@
 
 .breadcrumb{
-	font-size: 11px;
+	font-size: 14px;
+
+	padding-left: 0;
 	margin-bottom: 10px;
+	margin-left: 0;
+	margin-right: 0;
+
+    position: relative;
+    top: -20px;
+
 }
 
 .breadcrumb > li{
-	padding-left: 0;
+	display: inline-block; 
 }
 
 .breadcrumb > li:before{
-	content: "›";
+	content: ">";
 	display: inline-block;
-	color: #999;
+	color: #b9b9b9;
 	padding-right: 8px;
+	padding-left: 8px;
 	font-size: 14px;
 }
 
@@ -20,5 +29,12 @@
 	display: none;
 }
 
-.breadcrumb a{ color: #999; }
+.breadcrumb a{
+	color: #b9b9b9;
+
+	&.active, &.active:hover{
+		text-decoration: none;
+		color: #8c8c8c;
+	}
+}
 

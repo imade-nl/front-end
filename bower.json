@@ -22,6 +22,8 @@
     "slick-carousel": "^1.6.0",
     "magnific-popup": "^1.1.0",
     "owl.carousel": "^2.2.0",
-    "matchheight": "^0.7.0"
+    "matchheight": "^0.7.0",
+    "lightgallery": "^1.3.5",
+    "vue": "^2.1.6"
   }
 }

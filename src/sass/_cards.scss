@@ -1,0 +1,36 @@
+
+.card{
+	display: inline-block;
+}
+
+.card-img{
+	position: relative;
+	overflow: hidden;
+
+	//background: #fff;
+	//padding: 4px;
+	//box-shadow: 0 0 3px rgba(0, 0, 0, 0.15);
+}
+
+.card-header{
+	padding: 20px 20px;
+
+	//background-color: #fff;
+	//border: #000 solid 1px;
+}
+
+.card-content{
+	padding: 20px 20px;
+
+	//background-color: #fff;
+	//border: #000 solid 1px;
+}
+
+.card-title{
+	font-family: $headings-font-family;
+	font-weight: $headings-font-weight;
+}
+
+.card-text{
+	margin-bottom: 20px;
+}

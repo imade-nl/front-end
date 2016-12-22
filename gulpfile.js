@@ -44,6 +44,7 @@ gulp.task('js', function(){
         // 'src/vendor/slick-carousel/slick/slick.min.js',
         'src/vendor/owl.carousel/dist/owl.carousel.min.js',
         'src/vendor/matchheight/dist/jquery.matchHeight.js',
+        // 'src/vendor/lightgallery/dist/js/lightgallery.js',
         'src/vendor/highlight/jquery.highlight.js',
         'src/js/main.js'
     ])
@@ -58,6 +59,23 @@ gulp.task('js', function(){
 gulp.task('js:watch', function () {
     gulp.watch('./src/js/main.js', ['js']);
 });
+
+/* ==========================================================================
+    VUE JS
+   ========================================================================== */
+
+// gulp.task('vue', function(){
+// 	return gulp.src([
+// 		'src/vendor/vue/dist/vue.js',
+// 		'src/js/vue/*.js'
+// 	])
+// 	.pipe(gulp.dest('./dist/js'));
+// });
+
+// // watch for a changed Vue javascript
+// gulp.task('vue:watch', function () {
+//   gulp.watch('./src/js/vue/*.js', ['vue']);
+// });
 
 
 /* ==========================================================================
