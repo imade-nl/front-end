@@ -8,6 +8,7 @@ var tinypng = require('gulp-tinypng');
 var cleanCSS = require('gulp-clean-css');
 var sourcemaps = require('gulp-sourcemaps');
 var autoprefixer = require('gulp-autoprefixer');
+var pug = require('gulp-pug');
 
 
 /* ==========================================================================
@@ -93,6 +94,19 @@ gulp.task('html:watch', function () {
     gulp.watch('./src/*.html', ['html']);
 });
 
+// watch for changed pug src files
+gulp.task('pug:watch', function () {
+    gulp.watch('./src/*.pug', ['pug']);
+});
+
+gulp.task('pug', function() {
+    return gulp.src('src/*.pug')
+        .pipe(pug({
+            pretty: true
+        }))
+        .pipe(gulp.dest('./dist'));
+});
+
 
 /* ==========================================================================
     IMAGES
@@ -142,11 +156,11 @@ gulp.task('fonts', function() {
    ========================================================================== */
 
 // watch all
-gulp.task('watch', ['sass:watch', 'js:watch', 'img:watch', 'html:watch'], function () {
-    console.log('Watch is geactiveerd (sass, js, img, html).');
+gulp.task('watch', ['sass:watch', 'js:watch', 'img:watch', 'html:watch', 'pug:watch'], function () {
+    console.log('Watch is geactiveerd (sass, js, img, html, pug).');
 });
 
 // Default task
-gulp.task('default', ['sass', 'js', 'img', 'html', 'fonts'], function () {
-    console.log('Run default tasks (sass, js, img, html, fonts).');
+gulp.task('default', ['sass', 'js', 'img', 'html', 'pug', 'fonts'], function () {
+    console.log('Run default tasks (sass, js, img, html, pug, fonts).');
 });
