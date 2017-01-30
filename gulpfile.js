@@ -102,7 +102,7 @@ gulp.task('pug:watch', function () {
 gulp.task('pug', function() {
     return gulp.src('src/*.pug')
         .pipe(pug({
-            pretty: true
+            pretty: '    '
         }))
         .pipe(gulp.dest('./dist'));
 });
